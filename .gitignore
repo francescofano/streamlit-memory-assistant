@@ -1,0 +1,9 @@
+venv/
+.env
+data/docstore/
+data/vector_store/
+__pycache__/
+*.db
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal

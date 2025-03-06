@@ -54,6 +54,18 @@ Run the application:
 streamlit run app.py
 ```
 
+## Architecture
+
+The application uses LangGraph to manage conversation flow and state. Below is the graph representation of the conversation flow:
+
+![Conversation Flow Graph](graph.png)
+
+The graph shows the main conversation flow:
+- Starting at `__start__`
+- Moving to the main `chat` node for conversation
+- When needed, branching to `summarize_conversation` to maintain context
+- Eventually reaching `__end__` when the conversation is complete
+
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request.
